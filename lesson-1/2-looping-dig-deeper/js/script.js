@@ -21,6 +21,57 @@
 
 const stuff = ["piggy", "headlamp", "pen", "pencil", "eraser", "water bottle"];
 
+
+
+const article = document.querySelector("article");
+
+let stuffList = document.createElement("ul");
+//for loop
+/* for (let i = 0; i < stuff.length; i++) {
+    let listItem = document.createElement("li");
+    listItem.innerHTML = stuff[i];
+    stuffList.append(listItem);
+} */
+
+//item of array
+
+//for of
+//Keep iterating thgorug the array so far if you have items inside
+
+/* for (const item of stuff) {
+    let listItem = document.createElement("li");
+    listItem.innerHTML = item;
+    stuffList.append(listItem);
+} */
+//forEach
+
+/* stuff.forEach(function (item) {
+    let listItem = document.createElement("li");
+    listItem.innerHTML = item;
+    stuffList.append(listItem);
+});
+ */
+//arrow functions
+
+stuff.forEach((item) => {
+    let listItem = document.createElement("li");
+    listItem.innerHTML = item;
+    stuffList.append(listItem);
+});
+
+/* article.append(stuffList); */
+
+
+
+//1
+//a. select the article
+//b. create a tag using javascritp
+//c. loop on the array
+//d. create another tag
+//e. add the items in the array to the inner htmlof this tag
+//f. dd all the new tags in the parent tag.
+//Add everything in the article
+
 const nestedObjects = {
     item01: {
         name: "piggy",
@@ -54,3 +105,11 @@ const nestedObjects = {
     },
 };
 
+//7. What about objects,
+for(const singleObject in nestedObjects){
+    let listItem = document.createElement("li");
+    listItem.innerHTML = `Item name: ${nestedObjects[singleObject].name}`;
+    stuffList.append(listItem);
+
+}
+article.append(stuffList);
