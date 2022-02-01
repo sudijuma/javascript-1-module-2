@@ -1,11 +1,10 @@
 //Q1
 
-
 //q2How to detect an event
 
 //1. select the button with class. btn
 
-/* const button = document.querySelector(".btn");
+ const button = document.querySelector(".btn");
 
 //1. way 1 is to use a function expression😏 🤖 🤌
 const handleClick = function handleClick(){
@@ -18,7 +17,7 @@ button.addEventListener("click", handleClick);
 //way 2 🙂 😍 👻
 button.onclick = function(){
     console.log("i clicked the btn again")
-}; */
+}; 
 
 //emoji 😏 🤖 🤌 🙂 😍 👻
 
@@ -61,7 +60,7 @@ theHoverBtn.addEventListener("mouseout", handleMouseOut);
 //Q6 select all the li
 //on mouse over show the dataset of animal
 
-const allTheAnimals = document.querySelectorAll("li");
+/* const allTheAnimals = document.querySelectorAll("li");
 console.log(allTheAnimals);
 
 for (let i = 0; i < allTheAnimals.length; i++) {
@@ -69,4 +68,37 @@ for (let i = 0; i < allTheAnimals.length; i++) {
 };
 function hoverAllTheAnimals(event) {
     console.log(event.target.dataset.animal);
-};
+}; */
+
+var dog = function(){
+    var name, breed;
+
+}
+firstDog = new dog;
+firstDog.name = "dude";
+firstDog.breed="fjert";
+
+secondDog = new dog;
+secondDog.name = "knepp";
+secondDog.breed = "dobber";
+
+console.log(firstDog.breed);
+console.log(secondDog.name);
+
+var ganja = function(){
+    var name, type, rating, beginnerFriendly;
+}
+firstPlant = new ganja;
+firstPlant.name = "northen lights😍";
+firstPlant.type = "Indica";
+firstPlant.rating = "Excellent";
+firstPlant.beginnerFriendly = true;
+console.log(firstPlant);
+
+secondPlant = new ganja;
+secondPlant.name = "Power Plant👻"
+secondPlant.type = "Hybrid";
+secondPlant.rating= "Suberp";
+secondPlant.beginnerFriendly = true;
+
+console.log(secondPlant);
