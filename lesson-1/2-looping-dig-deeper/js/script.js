@@ -108,7 +108,7 @@ const nestedObjects = {
 //7. What about objects,
 for(const singleObject in nestedObjects){
     let listItem = document.createElement("li");
-    listItem.innerHTML = `Item name: ${nestedObjects[singleObject].name}`;
+    listItem.innerHTML = `Item name: ${nestedObjects[singleObject].weight}`;
     stuffList.append(listItem);
 
 }

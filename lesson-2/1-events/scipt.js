@@ -70,6 +70,10 @@ function hoverAllTheAnimals(event) {
     console.log(event.target.dataset.animal);
 }; */
 
+var animalName = document.querySelectorAll("li");
+
+
+
 var dog = function(){
     var name, breed;
 
@@ -93,7 +97,7 @@ firstPlant.name = "northen lights😍";
 firstPlant.type = "Indica";
 firstPlant.rating = "Excellent";
 firstPlant.beginnerFriendly = true;
-console.log(firstPlant);
+console.dir(firstPlant);
 
 secondPlant = new ganja;
 secondPlant.name = "Power Plant👻"
@@ -101,4 +105,13 @@ secondPlant.type = "Hybrid";
 secondPlant.rating= "Suberp";
 secondPlant.beginnerFriendly = true;
 
-console.log(secondPlant);
+console.dir(secondPlant);
+
+var prata = function(snackaDå){
+    console.log(snackaDå);
+}
+
+ganja.prototype.prata = prata;
+secondPlant.prata("Heeej")
+prata("fjert");
+firstPlant.prata("fjfj")
