@@ -138,3 +138,49 @@ var speak = function (what) {
 };
 var saySomething = { cool: "yah dude", drygt: "du är", töntigt: "Jorden är platt" }
 speak.call(saySomething, saySomething.drygt);
+
+
+//q7
+//Switch cace
+
+const animalDude = "cat";
+switch (animalDude) {
+    //if animal is a cat case 1
+    //if animal is a cow case 2
+    //if animal(var) is a bird case 3
+    //else default
+    case "cat":
+        console.log("mjau");
+        break;
+    case "cow":
+        console.log("Moo");
+        break;
+    case "bird":
+        console.log("piirppiirp");
+        break;
+    default:
+        console.log("this animal dosent have a sound")
+};
+
+
+//Q8 go again on setInterval
+
+const gina = "Sudi";
+let count = 1;
+function logMyWord() {
+    console.log(count + " vem är bäst " + gina);
+    count = count + 1;
+    if (count === 5) {
+        clearInterval(myTimer);
+    }
+}
+let myTimer = setInterval(logMyWord, 1000)
+
+//Q9 play with seTimeout
+const placeHållare = document.querySelector(".container");
+
+function updateDivAfterTwoSeconds() {
+    placeHållare.innerHTML = "hello I am updated";
+}
+setTimeout(updateDivAfterTwoSeconds, 2000);
+

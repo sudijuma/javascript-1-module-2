@@ -5,8 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .circles-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+      }
+      .circles {
+        background: red;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 10px 15px 10px 15px;
+      }
+      select {
+        height: 40px;
+        border-radius: 5px;
+        text-transform: capitalize;
+        padding: 0 15px;
+        border: 2px solid black;
+      }
+    </style>
   </head>
   <body>
+    <div class="container">
+      <label>
+        <select>
+          <option value="">select an option</option>
+          <option value="5">5</option>
+          <option value="10">10</option>
+          <option value="20">20</option>
+          <option value="30">30</option>
+          <option value="40">40</option>
+        </select>
+      </label>
+    </div>
+    <ul class="circles-container">
+      <li class="circles"></li>
+    </ul>
     <script src="./scipt.js"></script>
   </body>
 </html>
