@@ -8,10 +8,9 @@ formMessageContainer.onkeyup = function (event) {
     //console.log("key: ", event.key);
     //console.log("value: ", event.target.value)
     const numberOfCharcEntered = event.target.value.length;
-    console.log("numberOfCharcEntered;", numberOfCharcEntered)
+    console.log("number of characters;", numberOfCharcEntered)
     charsCount.innerHTML = numberOfCharcEntered;
-    if(numberOfCharcEntered >= 5){
-        formSubmitBTN.Disabled = numberOfCharcEntered <= 5;
+    if (formSubmitBTN.Disabled = numberOfCharcEntered <= 5) {
     } else {
         console.log("dduee")
     }
