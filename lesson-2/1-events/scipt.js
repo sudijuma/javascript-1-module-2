@@ -4,10 +4,10 @@
 
 //1. select the button with class. btn
 
- const button = document.querySelector(".btn");
+const button = document.querySelector(".btn");
 
 //1. way 1 is to use a function expression😏 🤖 🤌
-const handleClick = function handleClick(){
+const handleClick = function handleClick() {
     console.log("i clicked the BTN");
 };
 
@@ -15,9 +15,9 @@ const handleClick = function handleClick(){
 button.addEventListener("click", handleClick);
 
 //way 2 🙂 😍 👻
-button.onclick = function(){
+button.onclick = function () {
     console.log("i clicked the btn again")
-}; 
+};
 
 //emoji 😏 🤖 🤌 🙂 😍 👻
 
@@ -74,13 +74,13 @@ var animalName = document.querySelectorAll("li");
 
 
 
-var dog = function(){
+var dog = function () {
     var name, breed;
 
 }
 firstDog = new dog;
 firstDog.name = "dude";
-firstDog.breed="fjert";
+firstDog.breed = "fjert";
 
 secondDog = new dog;
 secondDog.name = "knepp";
@@ -89,7 +89,7 @@ secondDog.breed = "dobber";
 console.log(firstDog.breed);
 console.log(secondDog.name);
 
-var ganja = function(){
+var ganja = function () {
     var name, type, rating, beginnerFriendly;
 }
 firstPlant = new ganja;
@@ -102,12 +102,12 @@ console.dir(firstPlant);
 secondPlant = new ganja;
 secondPlant.name = "Power Plant👻"
 secondPlant.type = "Hybrid";
-secondPlant.rating= "Suberp";
+secondPlant.rating = "Suberp";
 secondPlant.beginnerFriendly = true;
 
 console.dir(secondPlant);
 
-var prata = function(snackaDå){
+var prata = function (snackaDå) {
     console.log(snackaDå);
 }
 
@@ -118,7 +118,7 @@ firstPlant.prata("fjfj")
 
 const fyllaFormulär = document.querySelector("#firstName");
 
-const närDuTrycker = function(){
+const närDuTrycker = function () {
     console.log("tryck igen");
     console.log(event.target.value);
 };
@@ -126,8 +126,15 @@ fyllaFormulär.addEventListener("keydown", närDuTrycker)
 
 
 const knappen = document.querySelector(".btn");
-knappen.onclick = function (){
+knappen.onclick = function () {
     console.log("du klickade mig kompis");
 };
 
 const fyll = document.querySelector(".container");
+
+var speak = function (what) {
+    console.log(what);
+    console.log(this.töntigt);
+};
+var saySomething = { cool: "yah dude", drygt: "du är", töntigt: "Jorden är platt" }
+speak.call(saySomething, saySomething.drygt);
