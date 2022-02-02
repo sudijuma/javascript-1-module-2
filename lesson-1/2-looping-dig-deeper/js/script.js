@@ -106,10 +106,30 @@ const nestedObjects = {
 };
 
 //7. What about objects,
-for(const singleObject in nestedObjects){
+for (const singleObject in nestedObjects) {
     let listItem = document.createElement("li");
     listItem.innerHTML = `Item name: ${nestedObjects[singleObject].weight}`;
     stuffList.append(listItem);
 
 }
 article.append(stuffList);
+
+const romanArticle = document.querySelector(".roman");
+
+articleList = document.createElement("h1");
+
+for (const geMigValue in nestedObjects) {
+    let nyLista = document.createElement("inline-flex");
+    nyLista.innerHTML = `Type: ${nestedObjects[geMigValue].name}`;
+    articleList.append(nyLista);
+};
+
+romanArticle.append(articleList);
+
+
+stuff.forEach(i => {
+    let coolLista = document.createElement("h3");
+    coolLista.innerHTML = i;
+    articleList.append(coolLista);
+});
+romanArticle.append(articleList);

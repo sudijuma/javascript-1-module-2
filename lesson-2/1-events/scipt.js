@@ -31,13 +31,13 @@ button.onclick = function(){
 // not used anymore
 
 
-const myFirstNameInput = document.querySelector("#firstName");
+/* const myFirstNameInput = document.querySelector("#firstName");
 
 const handleKeyPress = function () {
     console.log("key is pressed");
     console.log(event.target.value);
 }
-myFirstNameInput.addEventListener("keydown", handleKeyPress);
+myFirstNameInput.addEventListener("keydown", handleKeyPress); */
 
 
 //Q4 play with mouseover (to detect hovering)
@@ -115,3 +115,19 @@ ganja.prototype.prata = prata;
 secondPlant.prata("Heeej")
 prata("fjert");
 firstPlant.prata("fjfj")
+
+const fyllaFormulär = document.querySelector("#firstName");
+
+const närDuTrycker = function(){
+    console.log("tryck igen");
+    console.log(event.target.value);
+};
+fyllaFormulär.addEventListener("keydown", närDuTrycker)
+
+
+const knappen = document.querySelector(".btn");
+knappen.onclick = function (){
+    console.log("du klickade mig kompis");
+};
+
+const fyll = document.querySelector(".container");
