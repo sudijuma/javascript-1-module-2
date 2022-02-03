@@ -12,3 +12,9 @@ function handleScroll(){
 window.onscroll = handleScroll;
 
 window.addEventListener("scroll", handleScroll);
+
+/* stuff.forEach(function (item) {
+    let listItem = document.createElement("li");
+    listItem.innerHTML = item;
+    stuffList.append(item);
+}); */
