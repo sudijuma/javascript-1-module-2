@@ -56,3 +56,12 @@ const justAHappyFunction = function () {
     console.log("Hello Im a happy function1")
 }
 logTheArgument(justAHappyFunction);
+
+const love = document.querySelector(".li-list")
+const loveContainer = document.querySelector(".container")
+const imCool = function (arg1, arg2){
+    let thisList = document.createElement("li");
+    thisList.innerHTML = `Sudi ${arg1} Shevin, Shvein ${arg2} Sudi`;
+    love.append(thisList)
+}
+loveContainer.append(love);
