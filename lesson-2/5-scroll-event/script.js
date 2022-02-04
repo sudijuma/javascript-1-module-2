@@ -14,15 +14,14 @@ window.onscroll = handleScroll;
 window.addEventListener("scroll", handleScroll);
 
 
-const pepeToucher = document.querySelectorAll("p");
-let thisPepe = "",
+const pepeToucher = document.querySelector(".container")
 function changeTheStyle() {
-    for (let i = 0; i < pepeToucher.length; i++){
-        if(pepeToucher[i] = pepeToucher.length)
+    if (body.scrollY < 10) {
         pepeToucher.classList.add("pepeTime")
-    } 
+    }
 }
-pepeToucher.onscroll = changeTheStyle;
+onscroll = pepeToucher;
+console.log(body)
 
 /* stuff.forEach(function (item) {
     let listItem = document.createElement("li");
